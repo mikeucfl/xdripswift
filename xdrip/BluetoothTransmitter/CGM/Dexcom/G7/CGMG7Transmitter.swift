@@ -309,7 +309,7 @@ class CGMG7Transmitter: BluetoothTransmitter, CGMTransmitter {
                     if transmitterIdString.startsWith("DX01") {
                         maxSensorAgeInDays = ConstantsDexcomG7.maxSensorAgeInDaysStelo
                     } else {
-                        maxSensorAgeInDays = ConstantsDexcomG7.maxSensorAgeInDays
+                        maxSensorAgeInDays = ConstantsDexcomG7.maxSensorAgeInDaysNewG7 // test
                     }
 
                     // G7/ONE+/Stelo has the peculiarity that it will keep sending/repeating the same BG value (without ever changing) via BLE even after the session officially ends.
